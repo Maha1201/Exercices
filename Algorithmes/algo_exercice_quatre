@@ -1,0 +1,185 @@
+ Partie 4
+ 
+ Exercice 1 : Si Tutu < Toto + 4 ET Tata =/ "OK" alors
+ 	         Tutu = Tutu - 1
+ 	      Sinon
+ 	         Tutu = Tutu + 1
+ 	      Finsi 
+ 	      
+ Exercice 2 : variable heure, minute en entiers
+ 	      Début
+ 	      	Ecrire "Donnez l'heure"
+ 	      	Lire heure
+ 	      	Ecrire "Donnez minute"
+ 	      	Lire minute
+ 	      	Si minute =/ 59 alors
+ 	      	   minute = minute + 1
+ 	        Sinon
+ 	      	   Si heure =/ 23 ET minute = 59 alors
+ 	      	      heure = heure + 1
+ 	      	      minute = 00
+ 	      	   Sinon
+ 	      	      Si heure = 23 ET minute = 59 alors
+ 	      	         heure = 00
+ 	      	         minute = 00
+ 	      	      Finsi
+ 	      	   Finsi
+ 	      	Finsi
+ 	      	Ecrire "Dans une minute, il sera" heure "heure(s)" minute." 
+ 	      Fin
+ 	      
+ Exercice 3 : variable heure, minute, seconde en entier
+ 	      Début
+ 	         Ecrire "Donnez l'heure"
+ 	         Lire heure
+ 	         Ecrire "Donnez minute"
+ 	         Lire minute
+ 	         Ecrire "Donnez seconde"
+ 	         Lire seconde
+ 	         Si seconde =/ 59 alors
+ 	            seconde = seconde + 1
+ 	         Sinon
+ 	            Si heure =/ 23 ET minute =/ 59 alors
+ 	               minute = minute + 1
+ 	               seconde = 00
+ 	            Sinon
+ 	               Si heure =/ 23 ET minute = 59 alors
+ 	                  heure = heure + 1
+ 	                  minute = 00
+ 	                  seconde = 00
+ 	               Sinon
+ 	                  heure = 00
+ 	                  minute = 00
+ 	                  seconde = 00
+ 	               Finsi
+ 	            Finsi
+ 	         Finsi
+ 	         Ecrire "Dans une seconde, il sera" heure "heure(s)," minute "minute(s)et " seconde "seconde(s)".
+ 	      Fin
+ 	      
+ Exercice 4 : variable nbPhotocopie, facture en entier
+  	      Début
+  	         Ecrire "Nombre de photocopies ?"
+  	         Lire nbPhotocopie
+  	         Si nbPhotocopie <= 10 alors
+  	            facture = nbPhotocopie * 0.1
+  	         Sinon
+  	            Si 11 <= nbPhotocopie <= 20 alors
+  	               facture = nbPhotocopie * 0.09
+  	            Sinon
+  	               facture = nbPhotocopie * 0.08
+  	            Finsi
+  	         Finsi
+  	         Ecrire "Pour" nbPhotocopie "photocopies, vous devez" facture "euros."
+  	      Fin
+  	      
+ Exercice 5 : variable age en entier
+              variable sexe en chaine
+              variable impots en booléen ?
+              Début
+                 impots = 0
+                 Ecrire "Donnez l'age"
+                 Lire age
+                 Ecrire "Donnez le sexe"
+                 Lire sexe
+                 Si sexe = "Homme" alors
+                    Si age <= 20 alors
+                       impots = 1
+                    Finsi
+                 Sinon
+                    Si 18 <= age <= 35 alors
+                       impots =1 
+                    Finsi
+                 Finsi
+                 Si impots = 1 alors
+                    Ecrire "Cette personne est imposable"
+                 Sinon
+                    Ecrire "Cette personne n'est pas imposable"
+                 Finsi 
+              Fin
+              
+ Exercice 6 : variable A, B, C, D en entier
+              variable C1, C2, C3, C4 en booléen
+              Début
+              Ecrire "Résultats en % du premier candidat"
+              Lire A
+              Ecrire "Résultats en % du deuxième candidat"
+              Lire B
+              Ecrire "Résultats en % du troisième candidat"
+              Lire C
+              Ecrire "Résultats en % du dernier candidat"
+              Lire D
+              C1 = A >= 50
+              C2 = A < 12.5
+              C3 = B >= 50 OU C >= 50 OU D >= 50
+              C4 = A > B ET A > C ET A > D
+              Si C1 = 1 alors 
+                 Ecrire "Le premier candidat est élu"
+              Finsi
+              Si C2 = 1 OU C3 = 1 alors
+                 Ecrire "Le premier candidat est éliminé"
+              Finsi
+              Si C4 = 1 alors
+                 Ecrire "Le premier candidat est ballotage favorable"
+              Sinon
+                 Ecrire "Le premier candidat est en ballotage défavorable"
+              Finsi
+              Fin
+              
+ Exercice 7 : variable age, fidélité, permis, accident en entier
+ 	      variable vert, orange, rouge, nonAssure en booléen
+ 	      Début
+ 	      Lire age
+ 	      Lire titulaire
+ 	      Lire accident
+ 	      Lire fidélité
+ 	      vert = (age > 25 ET titulaire > 2 ET accident = 0) OU fidelité > 1
+ 	      orange = (age < 25 ET titulaire > 2 ET accident = 0) OU ( age > 25 ET titulaire < 2 ET accident = 0) OU (age > 25 ET titulaire > ET accident = 1)
+ 	      rouge = orange ET accident = accident +1
+ 	      nonAssure = rouge ET accident = accident + 1
+ 	      Si vert = 1 alors
+ 	         Ecrire "Tarif vert"
+ 	      Sinon
+ 	         Si orange = 1 alors
+ 	            Ecrire "Tarif orange"
+ 	         Sinon
+ 	            Si rouge = 1 alors
+ 	               Ecrire "Tarif rouge"
+ 	            Sinon
+ 	               Ecrire "Non assuré"
+ 	            Finsi
+ 	         Finsi
+ 	      Finsi
+ 	      Fin
+ 	     
+ Exercice 8 : variable jour, mois, année en entier
+ 	      variable bissextile en booléen
+ 	      Début
+ 	      Ecrire "Entrez un jour"
+ 	      Lire jour
+ 	      Ecrire "Entrez un mois"
+ 	      Lire mois
+ 	      Ecrire "Entrez une année"
+ 	      Lire année
+ 	      bissextile = année dp 4
+ 	      Si mois > 12 alors
+ 	         Ecrire "Date non valide"
+ 	      Sinon
+ 	      	 Si jour = 31 ET mois = 1 OU 3 OU 5 OU 7 OU 9 OU 11 alors
+ 	      	    Ecrire "Date valide"
+ 	      	 Sinon
+ 	      	    Si jour = 30 ET mois = 4 OU 6 OU 8 OU 10 OU 12
+ 	      	       Ecrire "Date valide"
+ 	      	    Sinon
+ 	      	       Si jour = 29 ET mois = 2 ET bissextile = 1 alors
+ 	      	          Ecrire "Date valide"
+ 	      	       Sinon
+ 	      	          Si jour = 28 ET mois = 2 ET bissextile = 0 alors
+ 	      	             Ecrire = Date valide"
+ 	      	          Finsi
+ 	      	       Finsi
+ 	      	    Finsi
+ 	      	 Ecrire "Date non valide"
+ 	      	 Finsi
+ 	      Finsi 
+ 	      Fin

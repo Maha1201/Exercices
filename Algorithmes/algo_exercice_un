@@ -1,0 +1,33 @@
+Les variables
+
+Exercice 1 : A = 3, 
+	     B = 4
+
+Exercice 2 : C = 1,
+	     B = 3,
+	     A = 2
+
+Exercice 3 : A = 6,
+             B = 2
+
+Exercice 4 : C = 13,
+	     B = 13,
+	     A = 13
+	     
+Exercice 5 : A = 2,
+	     B = 2
+	    
+	    Non ça ne permet pas d'échanger les deux valeurs de A et B. Si on inverse les deux 				 		 dernières instructions, A et B vaudront 5 et pas 2.
+	    
+Exercice 6 et 7 : variables A, B, C en entier
+		 Début
+		 A<-1
+		 B<-2
+		 C<-0
+		 C<-A
+		 A<-B
+		 B<-C
+		 
+Exercice 8 : C = "42312" additionner des caractères ?
+
+Exercice 9 : C = "42312"

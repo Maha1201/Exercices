@@ -1,0 +1,95 @@
+ Les tests
+ 
+ Exercice 1 : variable A en entier
+ 	      Début
+ 	      	Ecrire "Donnez un nombre"
+ 	      	Lire A
+ 	      	Si A > 0
+ 	      	   Ecrire "Ce nombre est positif"
+ 	      	Sinon
+ 	      	   Ecrire "Ce nombre est négatif"
+ 	      	Finsi
+ 	      Fin
+ 	      
+ Exercice 2 : variable A, B en entier
+  	      Début
+  	      	Ecrire "Donnez un nombre"
+  	      	Lire A
+  	      	Ecrire "Donnez un autre nombre"
+  	      	Lire B
+  	      	Si A*B>0
+  	      	   Ecrire "Ce nombre est positif"
+  	      	Sinon
+  	      	   Ecrire "Ce nombre est négatif"
+  	      	Finsi
+  	      Fin
+  	      
+ Exercice 3 : variable A, B, C en entier
+ 	      Début
+ 	      	Ecrire "Donnez un premier nombre"
+ 	      	Lie A
+ 	      	Ecrire "Donnez un deuxième nombre"
+ 	      	Lire B
+ 	      	Ecrire "Donnez un troisième nombre"
+ 	      	Lire C
+ 	      	Si A>B>C alors
+ 	      	   Ecrire "Rangés dans l'ordre alphabétique"
+ 	      	Sinon
+ 	           Ecrire "Pas rangés dans l'ordre alphabétique"
+ 	        Finsi
+ 	      Fin
+ 	      
+Exercice 4 : variable A en entier
+	     Début
+	     	Ecrire "Donnez un nombre"
+	     	Lire A
+	     	Si A=0 alors
+	     	   Ecrire "Le nombre vaut 0"
+	     	Sinon
+	     	   Si A>0 alors
+	     	      Ecrire "Le nombre est positif"
+	     	   Sinon
+	     	      Ecrire "Le nombre est négatif"
+	     	   Finsi
+	     	Finsi
+	     Fin
+	     
+Exercice 5 : variable A, B en entier
+	     Début
+	        Ecrire "Donnez un nombre"
+	        Lire A
+	        Ecrire "Donnez un autre nombre"
+	        Lire B
+	        Si A*B=0 alors
+	           Ecrire "Le produit est nul)
+	        Sinon
+	           Si A*B>0 alors
+	              Ecrire "Le produit est positif"
+	           Sinon
+	              Ecrire "Le produit est négatif"
+	           Finsi
+	        Finsi 
+	     Fin
+	     
+Exercice 6 : variable A en entier
+	     Début
+	        Ecrire "Age de l'enfant"
+	        Lire A
+	        Si A => 12 alors
+	           Ecrire "Cadet"
+	        Sinon
+	           Si 11 => A => 10 alors
+	              Ecrire "Minime"
+	           Sinon
+	              Si 9 => A => 8 alors
+	                 Ecrire "Pupille"
+	              Sinon
+	                 Si 7 => A => 6 alors
+	                    Ecrire "Poussin"
+	                 Finsi
+	              Finsi
+	           Finsi
+	        Finsi
+	     Fin
+	     
+	     Oui plusieurs algorithmes peuvent mener à ce résultat.

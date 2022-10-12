@@ -1,0 +1,133 @@
+ Les boucles
+ 
+ Exercice 1 : variable nb en entier
+ 	      Début
+ 	      nb = 0
+ 	      Ecrire "Entrez un nombre entre 1 et 3"
+ 	      Tantque nb < 1 ET nb > 3 alors
+ 	         Lire nb
+ 	         Si nb < 1 ET nb > 3 alors
+ 	            Ecrire "Reessayez"
+ 	         Finsi
+ 	      FinTantque
+ 	      Fin
+ 	      
+ Exercice 2 : variable nb en entier
+ 	      Début
+ 	      nb = 0
+ 	      Ecrire "Entrez un nombre entre 10 et 20"
+ 	      Tantque nb < 10 ET nb > 20 alors
+ 	         Lire nb
+ 	         Si nb < 10 alors
+ 	            Ecrire "Trop petit"
+ 	         Sinon
+ 	            Si nb > 20 alors
+ 	               Ecrire "Trop grand"
+ 	            Finsi
+ 	         Finsi
+ 	      FinTantque
+ 	      Fin
+ 	      
+ Exercice 3 : variable nb en entier
+ 	      Début
+ 	      Ecrire "Entrez un nombre"
+ 	      Lire nb
+ 	      Tantque nb =/ nb+10 alors
+ 	         nb = nb + 1
+ 	      FinTantque
+ 	      Fin
+ 	      
+ Exercice 4 : variable nb, nb2 en entier
+ 	      Début
+ 	      nb2 = 1
+ 	      Ecrire "Entrez un nombre"
+ 	      Lire nb
+ 	      Pour nb2 = 1 à 10 pas = 1
+ 	         nb = nb * nb2
+ 	         Ecrire nb
+ 	      nb2 Suivant
+ 	      Fin
+ 	      
+ Exercice 5 : variable nb, resultat, compteur en entier
+ 	      Début
+ 	      resultat = 0
+	      Ecrire "Entrez un nombre"
+	      Lire nb
+	      Pour compteur = 1 à nb pas = 1
+	         resultat = resultat + 1
+	      compteur Suivant
+	      Ecrire resultat
+ 	      Fin
+ 	      
+ Exercice 6 : variable nb, resultat, compteur en entier
+ 	      Début
+ 	      resultat = 1
+ 	      Ecrire "Entrez un nombre"
+ 	      Lire nb
+ 	      Pour compteur = 1 à nb pas = 1
+ 	         resultat = resultat * compteur
+ 	      compteur Suivant
+ 	      Ecrire resultat
+ 	      Fin
+ 	      
+ Exercice 7 : variable nb, plusGrand, compteur, position en entier
+ 	      Début
+ 	      plusGrand = 0
+ 	      Pour compteur = 1 à 20 pas = 1
+ 	         Ecrire "Entrez un nombre"
+ 	         Lire nb
+ 	         Si nb > plusGrand alors
+ 	            plusGrand = nb
+ 	            position = compteur
+ 	         Finsi
+ 	      compteur Suivant
+ 	      Ecrire plusGrand "saisi à la position" position
+ 	      Fin
+ 	      
+ Exercice 8 : variable nb, plusGrand, compteur, position en entier
+ 	      Début
+ 	      plusGrand = 0
+ 	      nb = 1
+ 	      compteur = 0
+ 	      Ecrire "Ecrire 0 pour arrêter"
+ 	      Tantque nb =/ 0
+ 	         Ecrire "Entrez un nombre"
+ 	         Lire nb
+ 	         compteur = compteur + 1
+ 	         Si nb > plusGrand alors
+ 	            plusGrand = nb
+ 	            position = compteur
+ 	         Finsi
+ 	      FinTantque
+ 	      Ecrire plusGrand "saisi à la position" position
+ 	      Fin
+ 	      
+ Exercice 9 : variable prix, somme, paye, rendu
+  	      Début
+  	      somme = 0
+  	      Tantque prix =/ 0
+  	         Ecrire "Mettre les prix, 0 pour arrêter"
+  	         Lire prix
+  	         somme = somme + prix
+  	      FinTantque
+  	      Ecrire "Payez"
+  	      Lire paye
+  	      rendu = paye - somme
+  	      Tantque rendu =/0 
+  	         Si rendu > 10 alors
+  	            Ecrire "Rendre 10€"
+  	         Sinon
+  	            Si rendu > 5 alors
+  	               Ecrire "Rendre 5€"
+  	            Sinon
+  	               Si rendu > 1 alors
+  	                  Ecrire "Rendre 1€"
+  	               Finsi
+  	            Finsi
+  	         Finsi 
+  	      Fin
+  	      
+ Exercice 10 : variable X, Y, n, p en entiers // à ne pas faire ?
+ 	       Début
+ 	       
+ 	       Fin

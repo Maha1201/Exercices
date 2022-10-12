@@ -1,0 +1,31 @@
+ Lecture et écriture
+ 
+ Exercice 1 : l'ordinateur va afficher 231 puis va afficher 462
+ 
+ Exercice 2 : variable A en entier
+ 	      Début
+ 	      	Ecrire "donnez un nombre"
+ 	      	Lire A
+ 	      	A<-A^2
+ 	      	Ecrire A
+ 	      Fin
+ 	      
+Exercice 3 : variable prixHT, nbArticles, TVA, totalTTC en entier
+	     Début
+	    	Lire prixHT
+	    	Lire nbArticles
+	    	Lire TVA
+	    	totalTTC<-prixHT*nbArticles+TVA
+	     Fin
+	    
+Exercice 4 : variable une, deux, trois, quatre en caractères
+	     Début
+	     	une<-"belle marquise,"
+	     	deux<-"vos beaux yeux"
+	     	trois<-"me font"
+	     	quatre<-"mourir d'amour"
+	     	Ecrire une & deux & trois & quatre
+	     	Ecrire une & deux & quatre & trois
+	     	Ecrire deux & une & trois & quatre
+	     	Ecrire deux & une & quatre & trois
+	     Fin
