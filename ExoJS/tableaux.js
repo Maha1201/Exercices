@@ -1,42 +1,46 @@
-// // Exercice 1 : 
-// let tableau = Array(parseInt(prompt("Choisissez la taille du tableau !")));
-// let text = "<ul>"; // Permet de créer une liste
+// Exercice 1 : 
+let tableau = new Array(parseInt(prompt("Choisissez la taille du tableau !")));
+let text = "<ul>"; // Permet de créer une liste
 
-// for(i=0; i<tableau.length; i++){
+for(i=0; i<tableau.length; i++){
 
-//     let remplir = prompt("Entrez la valeur " + i + " du tableau");
-//     tableau [i] = [remplir];
-//     text += "<li>" + tableau[i] + "</li>"; // Liste les valeurs i du tableau 
-// }
-// text +="</ul>"; // Fermer la liste
+    let remplir = prompt("Entrez la valeur " + i + " du tableau");
+    tableau [i] = [remplir];
+    text += "<li>" + tableau[i] + "</li>"; // Liste les valeurs i du tableau 
+}
+text +="</ul>"; // Fermer la liste
 
-// console.log("La taille du tableau est de : " + tableau.length); // Dans la console uniquement
-// console.table(tableau);
+console.log("La taille du tableau est de : " + tableau.length); // Dans la console uniquement
+console.table(tableau);
 
-// document.getElementById("tableauPhrase").innerHTML = ("Les valeurs contenues dans le tableau sont les suivantes : " + tableau);
-// document.getElementById("tableauID").innerHTML = text; // Affiche "text" donc le tableau créé dedans
+document.getElementById("tableauPhrase").innerHTML = ("Les valeurs contenues dans le tableau sont les suivantes : " + tableau);
+document.getElementById("tableauID").innerHTML = text; // Affiche "text" donc le tableau créé dedans
 
 
 // Exercice 2 :
 let entier;
 let tableau2;
+let y;
 
-function GetInteger(entier){
-    while(entier != parseInt(entier)){
-        entier = prompt("Erreur ! Entrez uniquement un entier !!");
+function GetInteger(){
+
+    y = Number(prompt("Choisissez la taille du tableau !"));
+
+    while(y != parseInt(y)){
+        y = Number(prompt("Erreur ! Entrez uniquement un entier !!"));
     }
 }
 
 function InitTab(){
-    tableau2 = Array(parseInt(prompt("Choisissez la taille du tableau !")));
-    GetInteger(tableau2);
+    
+    GetInteger();
+    tableau2 = new Array(y);
 }
 
 function SaisieTab(){
     InitTab();
     for(i=0; i<tableau2.length; i++){
         let remplir2 = prompt("Entrez la valeur " + (i+1) + " du tableau");
-        GetInteger(remplir2);
         tableau2 [i] = [remplir2];
     }
 }
@@ -77,3 +81,27 @@ function InfoTab(){
 // AfficheTab();
 // RechercheTab();
 // InfoTab();
+
+
+// function Bubulle(){
+//     for(i=0 ; i < tableau2.length-1 ; i++){
+//         if(tableau2[i] > tableau2[i+1]){
+//             plusPetit = tableau2[i+1];
+//             plusGrand = tableau2[i];
+//         }
+//         else{
+//             plusPetit = tableau2[i]
+//             plusGrand = tableau2[i+1];
+//         }
+//         tableau2[i] = plusPetit;
+//         tableau2[i+1] = plusGrand;
+//     }
+//     document.getElementById("tableauPhrase2").innerHTML = ("<br> Le tableau est trié de cette manière : " + tableau2);
+// }
+
+
+// Exercice 3 : 
+function Bubulle(){
+    tableau2.sort(function(a, b){return a - b});
+    document.getElementById("tableauPhrase2").innerHTML = ("<br> Le tableau est trié de cette manière : " + tableau2);
+}
