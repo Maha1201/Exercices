@@ -76,30 +76,6 @@ function InfoTab(){
     "<br> La moyenne du tableau est de : " + moyenne);
 }
 
-// InitTab();
-// SaisieTab();
-// AfficheTab();
-// RechercheTab();
-// InfoTab();
-
-
-// function Bubulle(){
-//     for(i=0 ; i < tableau2.length-1 ; i++){
-//         if(tableau2[i] > tableau2[i+1]){
-//             plusPetit = tableau2[i+1];
-//             plusGrand = tableau2[i];
-//         }
-//         else{
-//             plusPetit = tableau2[i]
-//             plusGrand = tableau2[i+1];
-//         }
-//         tableau2[i] = plusPetit;
-//         tableau2[i+1] = plusGrand;
-//     }
-//     document.getElementById("tableauPhrase2").innerHTML = ("<br> Le tableau est trié de cette manière : " + tableau2);
-// }
-
-
 // Exercice 3 : 
 function Bubulle(){
     tableau2.sort(function(a, b){return a - b});

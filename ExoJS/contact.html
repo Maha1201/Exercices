@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    
+    <fieldset> <!-- Contour noir -->
+
+    <h1>Vos coordonnées</h1>
+
+    <form name="formulaire" id="formulaire" method="post">
+
+        <label for="societe">Société : </label>
+            <input type="text" name="societe" id="societe">
+
+        <br><br>
+
+        <label for="personneAContacter">Personne à contacter : </label>
+            <input type="text" name="personneAContacter" id="personneAContacter">
+
+        <br><br>
+
+        <label for="adresse">Adresse de l'entreprise : </label>
+            <textarea type="text" name="adresse" id="adresse"></textarea>
+
+        <br><br>
+
+        <label for="codePostal">Code postal : </label>
+            <input type="text" name="codePostal" id="codePostal" maxlength="5">
+
+        <br><br>
+
+        <label for="ville">Ville : </label>
+            <input type="text" name="ville" id="ville">
+
+        <br><br>
+
+        <label for="email">E-mail : </label>
+            <input type="text" name="email" id="email">
+
+        <br><br>
+
+        <label for="telephone">Téléphone : </label>
+            <input type="text" name="telephone" id="telephone">
+
+        <br><br>
+    
+        <label for="projet">Sélectionnez l'environnement technique du projet : </label>
+            <textarea type="text" name="projet" id="projet"></textarea>
+        
+        <br>
+
+            <select id="choix">
+                <option value="choix" selected>Choisissez</option>
+                <option value="access">Access</option>
+                <option value="java">Java</option>
+                <option value="delphi">Delphi</option>
+                <option value="windev">Windev</option>
+                <option value="visualBasic">Visual Basic</option>
+                <option value="powerBuilder">Power Builder</option>
+                <option value="internet">Internet</option>
+                <option value="intranet">Intranet</option>
+                <option value="windowsNT">Windows NT</option>
+                <option value="unix">Unix</option>
+                <option value="sqlServer">SQL Serveur</option>
+                <option value="oracle">Oracle</option>
+                <option value="autres">Autres...</option>
+            </select>
+
+            <br><br>
+
+            <input type="submit" value="Envoyer" id="envoyer">
+            <input type="submit" value="Effacer" id="effacer">
+    </form>
+
+    </fieldset>
+
+    <script src="contact.js"></script>
+</body>
+</html>

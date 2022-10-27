@@ -1,13 +1,39 @@
-let i;
-let tableau = new Array(i);
+let i = 0;
+let element = 0;
+let tableau;
+
 
 function SaisieTab(){
-    let remplir = prompt("Entrez une valeur du tableau, 0 pour arrêter");
-    while(remplir != parseInt(0)){
-        let remplir = prompt("Entrez la valeur " + (i+1) + " du tableau, 0 pour arrêter");
-        tableau [i] = [remplir];
-    }
-    document.getElementById("tableauPhrase").innerHTML = ("<br> Les valeurs contenues dans le tableau sont les suivantes : " + tableau);
+    element = prompt("Entrez une valeur du tableau, 0 pour arrêter");
+    tableau = new Array(i);
+
+    while(element != parseInt(0)){
+
+        tableau [i] = element;
+        tableau [i++];
+        element = prompt("Entrez un élément du tableau, 0 pour arrêter");
 }
 
+    document.getElementById("tableauPhrase").innerHTML = ("<br> Les valeurs contenues dans le tableau sont les suivantes : " + tableau);
+    console.log(tableau);
+
+    document.getElementById("tableauTaille").innerHTML = ("<br> Il y a " + tableau.length + " valeurs dans ce tableau");
+}
+
+function Calculs(){
+
+    let somme = 0;
+    for(i=0; i<tableau.length; i++){
+        somme += parseInt(tableau[i]);
+    }
+    
+    let moyenne = 0;
+    moyenne = somme / tableau.length;
+
+    document.getElementById("tableauCalculs").innerHTML = ("<br> La somme de toutes les valeurs saisies est de : " + somme + 
+    "<br> La moyenne du tableau est de : " + moyenne);
+}
+
+
 SaisieTab();
+Calculs();
